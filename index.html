@@ -37,26 +37,45 @@
             </div>
         </header>
 <body>
-    <div class="fixed top-60 left-0" style="margin: 0px; height: 100%;"><img style="display: block;-webkit-user-select: none;margin: auto;transition;" src="https://webcms.tpilet.ee/static/Tpilet-usaldusvaarne-ettevote-2024.png">
+    <div class="z-10 fixed top-60 left-0" style="margin: 0px; height: 100%;"><img style="display: block;-webkit-user-select: none;margin: auto;transition;" src="https://webcms.tpilet.ee/static/Tpilet-usaldusvaarne-ettevote-2024.png">
     </div>
-    <div class="bg-fixed bg-cover" style="background-image: url('https://webcms.tpilet.ee/static/taustapilt.jpg')">
-        <div class="flex flex-col justify-center items-center h-screen gap-8">
+    <div class="z-20 bg-fixed bg-cover" style="background-image: url('https://webcms.tpilet.ee/static/taustapilt.jpg')">
+        <div class="z-20 flex flex-col justify-center items-center h-screen gap-8">
             <h2 class="text-4xl">Osta bussipiletid</h2>
-            <div class="bg-white flex-col p-6">
-                <div class="flex justify-around text-2xl font-semibold my-4 gap-8 ">
-                    <p class="text-[#ff5000] border-b-2 border-[#ff5000]">Üks suund</p>
-                    <p>Mõlemad suundad</p>
+            <div class="z-20 bg-white flex-col p-6">
+                <div class="flex justify-around text-l font-semibold my-4 gap-8 ">
+                    <p class="text-[#ff5000] border-b-2 border-[#ff5000]">ÜKS SUUND</p>
+                    <p class="text-gray-400">EDASI-TAGASI</p>
                 </div>
-                <div class="flex flex-col space-y-4 mt-12 item border-b border-gray-300 py-2">
-                    <input type="text" class="text-l text-gray-300 border-b border-gray-300 py-2" placeholder="Lähtepeatus" value="">
-                    <input type="text"Class="text-l text-gray-300 border-b border-gray-300 py-2" placeholder="Sihtpeatus">
+                
+                <div class="z-20 flex flex-col space-y-4 mt-12 item border-b border-gray-300 py-2">
+                    <input type="text" class="block text-l text-gray-300 border-b border-gray-300 py-2" placeholder="Lähtepeatus" value="">
+                    <input type="text"Class="block text-l text-gray-300 border-b border-gray-300 py-2" placeholder="Sihtpeatus">
                     <input type="date" name="" id=""/>
-                </div>
-                <div class="bg-white flex-col p-4 flex flex-col items-center">
+
+
                     
+                </div>
+                <div class="z-20 bg-white flex-col p-4 flex flex-col items-center">
+                    <div class="relative -top-10 left-40">
+                        <button class="relative -top-24 right-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+                                <defs>
+                                    <circle id="a" cx="12" cy="12" r="12"/>
+                                </defs>
+                                <g fill="none" fill-rule="evenodd">
+                                    <g>
+                                        <use fill="#FFF" xlink:href="#a"/>
+                                        <circle cx="12" cy="12" r="11.5" stroke="#EDEDED"/>
+                                    </g>
+                                    <path fill="#FF5000" d="M14.333 15.333v-4.666H13v4.666h-2L13.667 18l2.666-2.667h-2zM9.667 6L7 8.667h2v4.666h1.333V8.667h2L9.667 6z"/>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
                     <button class="bg-[#ff5000] h-10 w-40 rounded-md mt-8 text-white">OTSI REISE</button>
                 </div>
-                <div class="bg-white flex-col p-2 flex flex-col items-center">
+                <div class="z-20 bg-white flex-col p-2 flex flex-col items-center">
                     
                     <h2 class="text-[14px] font-semibold">POPULAARSED SUUNAD</h2>
                     <div class="gap-x-20 mt-4 grid grid-cols-2 gap-2 p-4">                        <p class="text-[14px] text-gray-400 hover:text-[black]" href="">Tallinn > Tartu</p>
@@ -67,7 +86,7 @@
                         <p class="text-[14px] text-gray-400 hover:text-[black]" href="">Narva > Tallinn</p>
                         <p class="text-[14px] text-gray-400 hover:text-[black]" href="">Tallinn > Viljandi</p>
                         <p class="text-[14px] text-gray-400 hover:text-[black]" href="">Viljandi > Tallinn</p>
-                        </div>
+                    </div>
                 </div>
                 
             </div>
